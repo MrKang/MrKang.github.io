@@ -11,14 +11,14 @@
 #     *My Tag* is an example of how to define a custom tag.
 # ~~~
 
-笔记:
+notes:
   name: 笔记
   image: /public/img/hyde.jpg
   color: '#949667'
   description: >
     记录iOS学习历程的点滴.
 
-吐槽:
+blablabla:
   name: 吐槽
   image: /public/img/jekyll.jpg
   color: '#949667'
