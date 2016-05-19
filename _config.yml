@@ -2,12 +2,12 @@
 permalink:        pretty
 
 # Setup
-url:              http://qwtel.com
+url:              http://captaink.org
 
 # Set to '' in case of hosting on `http://<your-github-name>.github.io`
-baseurl:          /hydejack
+baseurl:          ''
 
-title:            Hydejack
+title:            康子龙的博客
 
 # Markdown enabled, however don't use more than one paragraph (enforced by `>`)
 description:      >
@@ -19,18 +19,18 @@ description:      >
 sidebar_tags:     [jekyll, hyde]
 
 # Fallback image and color if not overwritten for tag or post
-image:            /hydejack/public/img/nap.jpg
+image:            /public/img/side.jpg
 color:            '#A85641'
 
 author:
   name:           'Florian Klampfer'
 
   # Setting social media usernames will add icons at the bottom of the sidebar
-  twitter:        qwtel
-  github:         qwtel
+  twitter:        @kangzlong
+  github:         MrKang
 
   # Setting a disqus username will enable the comment section
-  disqus:         qwtel
+  disqus:         MrKang
 
   # This photo will be used in the about section
   photo:          http://qwtel.com/public/img/flo.jpg
