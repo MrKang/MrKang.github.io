@@ -14,5 +14,6 @@ title: About
 {% endif %}
 
 {{ site.author.about }}
-
-[write something about self]
+>哦对了，我现居北京，这里仅以记录对iOS学习的一些笔记，以及对各方面的吐槽，哈哈。   
+>虽然这里留下了我的Twitter，但其实我用的并不多，如果有要联系我的话可以发我Gmail：   
+>kangzlong@gmail.com   
