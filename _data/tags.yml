@@ -11,17 +11,16 @@
 #     *My Tag* is an example of how to define a custom tag.
 # ~~~
 
-hyde:
-  name: Hyde
-  image: /hydejack/public/img/hyde.jpg
+笔记:
+  name: 笔记
+  image: /public/img/hyde.jpg
   color: '#949667'
   description: >
-    Hyde is a brazen two-column Jekyll theme that pairs a prominent sidebar with uncomplicated content.
-    It’s based on Poole, the Jekyll butler.
+    记录iOS学习历程的点滴.
 
-jekyll:
-  name: Jekyll
-  image: /hydejack/public/img/jekyll.jpg
+吐槽:
+  name: 吐槽
+  image: /public/img/jekyll.jpg
   color: '#949667'
   description: >
-    Jekyll is a static site generator, an open-source tool for creating simple yet powerful websites of all shapes and sizes.
+    只是个吐槽而已，没必要太认真~
