@@ -14,7 +14,7 @@ description:      >
   沉淀技术
 
 # The tags listed as entries in the sidebar
-sidebar_tags:     [notes, blablabla]
+sidebar_tags:     [笔记, 吐槽]
 
 # Fallback image and color if not overwritten for tag or post
 image:            /public/img/side.jpg
@@ -24,7 +24,7 @@ author:
   name:           'Florian Klampfer'
 
   # Setting social media usernames will add icons at the bottom of the sidebar
-  twitter:        @kangzlong
+  twitter:        kangzlong
   github:         MrKang
 
   # Setting a disqus username will enable the comment section
