@@ -31,7 +31,7 @@ author:
   disqus:         captaink
 
   # This photo will be used in the about section
-  photo:          http://qwtel.com/public/img/flo.jpg
+  photo:          /public/img/photo.jpg
 
   # Markdown enabled, can use multiple paragraphs (enabled by `|`)
   about:          |
