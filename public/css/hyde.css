@@ -352,7 +352,9 @@ a:focus::before {
 .icon-icon-twitter:before {
   content: "\e901";
 }
-
+.icon-icon-weibo::before {
+  content: "\ea9a"
+}
 .me {
     width: 6.5rem;
     margin-top: -4.8rem;
