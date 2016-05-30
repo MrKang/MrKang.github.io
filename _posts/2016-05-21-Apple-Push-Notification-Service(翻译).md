@@ -27,7 +27,7 @@ APNs会从你的provider到每一个用户的设备，为你的App传输和路�
 APNs两边的provider方和设备方都有多个连接点。provider方面，这些被叫做网关。这是典型的多provider，每一个都通过网关创建一个或多个与APNs具有长效和保密性的连接。这些provider通过APNs给多个装有他们的客户端App的设备发送通知。
    
 ><small>关于获取设备token的信息，请查看[Token Generation and Dispersal](https://developer.apple.com/library/ios/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/Chapters/APNsProviderAPI.html#//apple_ref/doc/uid/TP40008194-CH101-SW1)。</small>
-><small>关于通知负载，请查看[The Remote Notification Payload](https://developer.apple.com/library/ios/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/Chapters/IPhoneOSClientImp.html#//apple_ref/doc/uid/TP40008194-CH103-SW1)。<small>
+><small>关于通知负载，请查看[The Remote Notification Payload](https://developer.apple.com/library/ios/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/Chapters/IPhoneOSClientImp.html#//apple_ref/doc/uid/TP40008194-CH103-SW1)。</small>
 
 ### 服务质量(Quality of Service)
 APNs包含一个执行“保存——发送”功能的默认服务质量(Quality of Service  QoS)组件。如果APNs试图发送一个通知但是设备却离线，通知会被保存在一个有限时期内，当设备可以接收通知时将它发出去。
@@ -51,7 +51,7 @@ APNs服务也有必要的证书，CA证书，还有用于验证连接以及provi
 
 Provider通过TLS 点对点验证来建立与APNs的连接信任。在TLS连接初始化后，会从APNs获得服务证书然后在你的provider端验证此证书。然后你发送要在APNs端验证的provider证书给APNs。在这步完成后，一个安全的TLS连接就创建了。APNs现在因为此连接通过一个合法的provider已经被创建而满意。（此句话怎么翻译怎么别扭，不知道是不是想拟人 - -!）   
 ![](https://developer.apple.com/library/ios/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/Art/service_provider_ct_2x.png)   
-HTTP/2 provider连接对分发至一个特定App有效，通过在证书中特定的主题(bundle ID)来标识。依靠你怎样设置和准备你的APNs SSL 证书，连接也对远程通知到与主App关联的任何Apple Watch复杂的或后台的VoIP服务有效。具体查看[APNs Provider API](https://developer.apple.com/library/ios/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/Chapters/APNsProviderAPI.html#//apple_ref/doc/uid/TP40008194-CH101-SW1)。APNs 也维护一个证书废弃列表；如果一个provider的证书在此列表上，APNs可以撤除provider信任(也就是拒绝连接)。
+HTTP/2 provider连接对分发至一个特定App有效，通过在证书中特定的主题(bundle ID)来标识。依靠你怎样设置和准备你的APNs SSL 证书，连接也对远程通知到与主App关联的任何Apple Watch界面组件或后台的VoIP服务有效。具体查看[APNs Provider API](https://developer.apple.com/library/ios/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/Chapters/APNsProviderAPI.html#//apple_ref/doc/uid/TP40008194-CH101-SW1)。APNs 也维护一个证书废弃列表；如果一个provider的证书在此列表上，APNs可以撤除provider信任(也就是拒绝连接)。
 
 ### APNs到设备的连接信任(APNs-to-Device Connection Trust)
 每个设备都有被用于验证设备与APNs的连接的一个设备证书和私钥。设备在设备激活时期获取它的证书和密钥并把他们保存在keychain中。   
